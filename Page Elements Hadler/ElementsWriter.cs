@@ -11,6 +11,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace demo.litecart.net_POM.ElementsInfo
 {
+    /// <summary>
+    /// Write all elements to .json file
+    /// To use you should create new class ElementWriter
+    /// </summary>
     public class ElementsWriter
     {
 
