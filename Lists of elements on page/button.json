@@ -1,0 +1,138 @@
+[
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "btn btn-default navbar-toggler hidden-md hidden-lg hidden-xl hidden-xxl",
+    "Value": "",
+    "Type": "button",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "btn btn-default",
+    "Value": "",
+    "Type": "button",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "Sign In",
+    "Id": "",
+    "ClassName": "btn btn-default",
+    "Value": "Sign In",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "",
+    "Id": "",
+    "ClassName": "preview btn btn-default btn-sm",
+    "Value": "",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "Subscribe",
+    "Id": "",
+    "ClassName": "btn btn-default",
+    "Value": "Subscribe",
+    "Type": "submit",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "Accept Cookies",
+    "Id": "",
+    "ClassName": "btn btn-default",
+    "Value": "1",
+    "Type": "button",
+    "Url": "https://demo.litecart.net/"
+  },
+  {
+    "Text": "Decline",
+    "Id": "",
+    "ClassName": "btn btn-default",
+    "Value": "0",
+    "Type": "button",
+    "Url": "https://demo.litecart.net/"
+  }
+]
