@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace demo.litecart.net_POM.Tests
 {
-    public class GetAllPageButtons : TestBase
+    public class GetAllPageButtons : TestBase 
     {
         protected override string url => "https://demo.litecart.net/";
         string type = "button";
@@ -22,6 +22,5 @@ namespace demo.litecart.net_POM.Tests
             writer.WriteAllElementsByTypeToJson(driver, type, path);
 
         }
-
     }
 }
