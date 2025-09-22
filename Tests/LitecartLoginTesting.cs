@@ -27,5 +27,6 @@ namespace demo.litecart.net_POM.Tests
             mainPage.LoginWithEmailAndPassword("invalid@email.com", "incorrectpass");
             mainPage.CheckThatAllertMessageContainsText("The email does not exist in our database");
         }
+
     }
 }

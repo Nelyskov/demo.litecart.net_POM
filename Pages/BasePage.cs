@@ -13,7 +13,7 @@ namespace demo.litecart.net_POM.Pages
         protected IWebDriver driver;
         protected WebDriverWait wait;
         private IJavaScriptExecutor js;
-        private By dropDownMenuText => By.CssSelector("#offcanvas .dropdown-toggle i");
+        private By dropDownMenuText => By.CssSelector("#offcanvas .dropdown-toggle");
 
         protected By alertMessage => By.Id("notices");
         public BasePage(IWebDriver driver)
@@ -51,7 +51,8 @@ namespace demo.litecart.net_POM.Pages
 
         public bool IsUserLoggedIn()
         {
-            return WaitForElement(dropDownMenuText).Text != "Sign in";
+            var text = WaitForElement(dropDownMenuText).Text.Trim();
+            return !text.Equals("Sign in", StringComparison.OrdinalIgnoreCase);
         }
 
         public void WaitForCaptchInput()

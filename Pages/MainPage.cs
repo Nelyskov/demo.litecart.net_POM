@@ -70,9 +70,14 @@ namespace demo.litecart.net_POM.Pages
             return new MainPage(driver);
         }
 
-        public BasePage OpenAccountPage()
-        { 
-            return IsUserLoggedIn() ? new AccountPage(driver) : new UnloggedAccountPage(driver);
+        public void OpenAccountPage()
+        {
+            WaitForElement(accountBtn).Click();
+            WaitForPageLoad();
+
+            //return IsUserLoggedIn()
+            //    ? new AccountPage(driver)
+            //    : new CreateAccountPage(driver);
         }
 
         public CartPage OpenCart()

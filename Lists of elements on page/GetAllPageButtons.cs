@@ -12,7 +12,7 @@ namespace demo.litecart.net_POM.Tests
     public class GetAllPageButtons : TestBase 
     {
         protected override string url => "https://demo.litecart.net/";
-        string type = "button";
+        string type = "input";
         string path = "D:\\Git\\demo.litecart.net_POM\\Lists Of Elements on page";
 
         [Test]
