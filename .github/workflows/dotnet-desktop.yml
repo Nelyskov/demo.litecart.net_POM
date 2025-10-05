@@ -31,9 +31,9 @@ jobs:
       with: 
         dotnet-version: '8.0.x'
     - name: Restore dependencies
-      run: dotnet Restore
+      run: dotnet restore demo.litecart.net_POM.sln
     - name: Build solution
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build demo.litecart.net_POM.sln --no-restore --configuration Release
     - name: Run tests
       run: dotnet test demo.litecart.net_POM.csproj --no-build --configuration Release --verbosity normal
     
