@@ -35,5 +35,5 @@ jobs:
     - name: Build solution
       run: dotnet build demo.litecart.net_POM.sln --no-restore --configuration Release
     - name: Run tests
-      run: dotnet test demo.litecart.net_POM.csproj --no-build --configuration Release --verbosity normal
+      run: dotnet test Tests/Tests.csproj --no-build --configuration Release --verbosity normall
     
