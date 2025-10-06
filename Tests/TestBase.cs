@@ -52,7 +52,15 @@ namespace demo.litecart.net_POM.Tests
         [TearDown]
         public void TearDown()
         {
-            driver.Close();
+            if (TestContext.CurrentContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed)
+            {
+                var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+                var filePath = Path.Combine("/home/runner/work/demo.litecart.net_POM/demo.litecart.net_POM", $"{TestContext.CurrentContext.Test.Name}.png");
+                screenshot.SaveAsFile(filePath, ScreenshotImageFormat.Png);
+                TestContext.AddTestAttachment(filePath);
+            }
+
+            driver?.Quit();
         }
     }
 }
