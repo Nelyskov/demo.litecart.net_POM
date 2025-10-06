@@ -13,10 +13,17 @@ namespace demo.litecart.net_POM.Tests
         [SetUp]
         public void Setup()
         {
-            driver = new ChromeDriver();
-            //wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl(url);
+            var options = new ChromeOptions();
+            options.AddArgument("--headless=new"); // Включаем headless режим
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--disable-gpu");
+            options.AddArgument("--window-size=1920,1080");
+            options.AddArgument("--remote-debugging-port=9222");
+            options.AddArgument($"--user-data-dir=/tmp/chrome-user-data-{Guid.NewGuid()}"); // уникальная папка
+
+            driver = new ChromeDriver(options);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
         public void WriteAllElementsByType(string typeOfElement, string path, bool append)
         {
