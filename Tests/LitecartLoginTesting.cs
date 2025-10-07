@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Allure;
+using Allure.NUnit.Attributes;
 
 namespace demo.litecart.net_POM.Tests
 {
@@ -13,6 +15,7 @@ namespace demo.litecart.net_POM.Tests
         protected override string url => "https://demo.litecart.net/";
 
         [Test]
+        [AllureDescription("Проверка успешного логирования пользователя с валидными данными")]
         public void WhenLoginWithValidNameAndPassword_SuccessMessageShouldAppear()
         { 
             MainPage mainPage = new MainPage(driver);
@@ -21,6 +24,7 @@ namespace demo.litecart.net_POM.Tests
         }
 
         [Test]
+        [AllureDescription("Проверка логирования пользователя с невалидными данными")]
         public void WhenLoginWithNotValidNameAndPassword_UnsuccessMessageShouldAppear()
         {
             MainPage mainPage = new MainPage(driver);
